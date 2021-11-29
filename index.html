@@ -20,50 +20,183 @@
       section {
         padding: 60px 0;
       }
+
+      .skills__bar,
+      .skills__percentage {
+          height: 5px;
+          border-radius: .25rem; 
+      }
+
+      .skills__bar {
+          background-color: white;
+      }
+
+      .skills__percentage {
+          display: block;
+      }
+
+      .skills__html {
+          width: 90%;
+          background-color: rgb(255, 47, 47);
+      }
+
+      .skills__css {
+          width: 80%;
+          background-color: rgb(7, 89, 212);
+      }
+
+      .skills__js {
+          width: 60%;
+          background-color: rgb(255, 224, 47);
+      }
+
+      .skills__react {
+          width: 85%;
+          background-color: rgb(47, 248, 255);
+      }
+
+      .skills__php {
+        width: 80%;
+        background-color: rgb(7, 89, 212);
+      }
+
+      .skills__node {
+        width: 70%;
+        background-color: rgb(23, 138, 48);
+      }
+
+      .skills__firebase {
+        width: 90%;
+        background-color: rgb(255, 224, 47);
+      }
+
+      .skills__python {
+        width: 55%;
+        background-color: rgb(47, 248, 255);
+      }
+
+      .skills__figma {
+        width: 90%;
+        background-color: rgb(255, 47, 47);
+      }
+
+      .skills__sketch {
+        width: 85%;
+        background-color: rgb(255, 224, 47);
+      }
+
+      .skills__photoshop {
+        width: 85%;
+        background-color: rgb(7, 89, 212);
+      }
     </style>
 
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-md position-fixed bg-dark navbar-light">
-      <div class="container-xxl">
-        <a href="#home" class="navbar-brand">
-          <span class="fw-bold btn btn-lg btn-outline-info rounded-pill">
-            <i class="bi bi-house-fill"></i>
-          </span>
-        </a>
-        <a href="#intro" class="navbar-brand">
-          <span class="fw-bold btn btn-lg btn-outline-info rounded-pill">
-            <i class="bi bi-person-fill"></i>
-          </span>
-        </a>
-        <a href="#intro" class="navbar-brand">
-          <span class="fw-bold btn btn-lg btn-outline-info rounded-pill">
-            <i class="bi bi-file-text-fill"></i>
-          </span>
-        </a>
-        <a href="#intro" class="navbar-brand">
-          <span class="fw-bold btn btn-lg btn-outline-info rounded-pill">
-            <i class="bi bi-briefcase-fill"></i>
-          </span>
-        </a>
-        <a href="#intro" class="navbar-brand">
-          <span class="fw-bold btn btn-lg btn-outline-info rounded-pill">
-            <i class="bi bi-image-alt"></i>
-          </span>
-        </a>
-        <a href="#intro" class="navbar-brand">
-          <span class="fw-bold btn btn-lg btn-outline-info rounded-pill">
-            <i class="bi bi-send-fill"></i>
-          </span>
-        </a>
+    <!--==================== NAVBAR START ====================-->
+    <nav class="col-1 navbar navbar-expand-md position-fixed h-100 w-auto bg-dark shadow">
+      <div class="container position-absolute top-0 start-0 h-100 w-25">
+
+        <!-- toggle button for mobile nav -->
+        <div class="navbar-dark position-absolute top-0 start-0 m-1">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+           data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" 
+           aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-end align-center d-none d-lg-inline" id="main-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#home" class="navbar-brand">
+                  <span class="fw-bold btn btn-outline-secondary rounded-pill">
+                    <i class="bi bi-house-fill"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="navbar-brand">
+                  <span class="fw-bold btn btn-outline-secondary rounded-pill">
+                    <i class="bi bi-person-fill"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="navbar-brand">
+                  <span class="fw-bold btn btn-outline-secondary rounded-pill">
+                    <i class="bi bi-file-text-fill"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item d-md-none">
+                <a href="#services" class="navbar-brand">
+                  <span class="fw-bold btn btn-outline-secondary rounded-pill">
+                    <i class="bi bi-briefcase-fill"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item ms-2 d-none d-md-inline">
+                <a href="#intro" class="navbar-brand">
+                  <span class="fw-bold btn btn-outline-secondary rounded-pill">
+                    <i class="bi bi-image-alt"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item ms-2 d-none d-md-inline">
+                <a href="#intro" class="navbar-brand">
+                  <span class="fw-bold btn btn-outline-secondary rounded-pill">
+                    <i class="bi bi-send-fill"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- navbar links -->
+        <div class="row collapse navbar-collapse" id="mai-nav">
+
+          <a href="#home" class="navbar-brand">
+            <span class="fw-bold btn btn-lg btn-outline-secondary rounded-pill">
+              <i class="bi bi-house-fill"></i>
+            </span>
+          </a>
+          <a href="#about" class="navbar-brand">
+            <span class="fw-bold btn btn-lg btn-outline-secondary rounded-pill">
+              <i class="bi bi-person-fill"></i>
+            </span>
+          </a>
+          <a href="#skills" class="navbar-brand">
+            <span class="fw-bold btn btn-lg btn-outline-secondary rounded-pill">
+              <i class="bi bi-file-text-fill"></i>
+            </span>
+          </a>
+          <a href="#services" class="navbar-brand">
+            <span class="fw-bold btn btn-lg btn-outline-secondary rounded-pill">
+              <i class="bi bi-briefcase-fill"></i>
+            </span>
+          </a>
+          <a href="#intro" class="navbar-brand">
+            <span class="fw-bold btn btn-lg btn-outline-secondary rounded-pill">
+              <i class="bi bi-image-alt"></i>
+            </span>
+          </a>
+          <a href="#intro" class="navbar-brand">
+            <span class="fw-bold btn btn-lg btn-outline-secondary rounded-pill">
+              <i class="bi bi-send-fill"></i>
+            </span>
+          </a>
+        </div>
 
       </div>
     </nav>
+    <!--==================== NAVBAR END ====================-->
 
-    <!--==================== MAIN ====================-->
+    <!--==================== MAIN START ====================-->
     <main class="main">
-      <!--==================== HOME ====================-->
+      <!--==================== HOME START ====================-->
       <section id="home">
         <div class="container my-5">
           <div class="row justify-content-center align-items-center">
@@ -99,7 +232,9 @@
   
         </div>
       </section>
+      <!--==================== HOME END ====================-->
   
+      <!-- SCROLL BUTTON START -->
       <div class="container text-center">
         <div class="home__scroll">
           <a href="#about" class="btn btn-outline-info mb-5 home__scroll-button button--flex">
@@ -109,13 +244,16 @@
           </a>
         </div>
       </div>
+      <!-- SCROLL BUTTON END -->
   
-      <!--==================== ABOUT ====================-->
+      <!--==================== ABOUT START ====================-->
       <section id="about">
         <div class="container my-5">
 
-          <h1 class="text-center fw-bold section__title">About Me</h1>
-          <p class="lead text-center mb-5 section__subtitle">My introduction</p>
+          <div class="text-center mb-5">
+            <h1 class="fw-bold section__title">About Me</h1>
+            <p class="lead section__subtitle">My introduction</p>
+          </div>
 
           <div class="row justify-content-center align-items-center">
 
@@ -154,14 +292,294 @@
           </div>
         </div>
       </section>
+      <!--==================== ABOUT END ====================-->
 
-      <!--==================== SKILLS ====================-->
+      <!--==================== SKILLS START ====================-->
       <section id="skills">
+        <div class="container my-5">
 
+          <div class="text-center mb-5">
+            <h1 class="fw-bold section__title">Skills</h1>
+            <p class="lead section__subtitle">My technical level</p>
+          </div>
+
+          <!-- Accordion Start -->
+          <div class="row g-5 justify-content-around align-items-center">
+            <div class="col-lg-6">
+
+              <div class="accordion accordion-flush shadow-lg" id="accordion_skills">
+
+                <!--==================== SKILLS 1 START ====================-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-1">
+                    <button class="accordion-button bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#skill-1" aria-expanded="true" aria-controls="skill-1">
+                      <div class="text-light skills__header">
+                        <p class="lead fw-bold skills__title"><i class="bi bi-braces"></i> Frontend Developer</p>
+                        <p class="muted skills__subtitle">More than 4 years</p>
+                      </div>
+                    </button>
+                  </h2>
+
+                  <div id="skill-1" class="accordion-collapse collapse show bg-dark" aria-labelledby="heading-1" data-bs-parent="#accordion_skills">
+                    <div class="accordion-body">
+
+                        <!-- HTML5 Percentage Start -->
+                        <div class="text-danger mb-3 skills__data">
+                            <div class="skills__titles">
+                                <p class="skills__name">HTML <br>90% </p>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__html"></span>
+                            </div>
+                        </div>
+                        <!-- HTML5 Percentage End -->
+
+                        <!-- CSS Percentage Start -->
+                        <div class="text-primary mb-3 skills__data">
+                            <div class="skills__titles">
+                                <p class="skills__name">CSS <br>80%</p>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__css"></span>
+                            </div>
+                        </div>
+                        <!-- CSS Percentage End -->
+
+                        <!-- JavaScript Percentage Start -->
+                        <div class="text-warning mb-3 skills__data">
+                            <div class="skills__titles">
+                                <p class="skills__name">JavaScript <br>60%</p>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__js"></span>
+                            </div>
+                        </div>
+                        <!-- JavaScript Percentage End -->
+
+                        <!-- React Percentage Start -->
+                        <div class="text-info mb-3 skills__data">
+                            <div class="skills__titles">
+                                <p class="skills__name">React <br>85%</p>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__react"></span>
+                            </div>
+                        </div>
+                        <!-- React Percentage End -->
+
+                    </div>
+                  </div>
+
+                </div>
+                <!--==================== SKILLS 1 END ====================-->
+
+                <!--==================== SKILLS 2 START ====================-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-2">
+                    <button class="accordion-button bg-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skill-2" aria-expanded="false" aria-controls="skill-1">
+                      <div class="text-light skills__header">
+                        <p class="lead fw-bold skills__title"><i class="bi bi-server"></i> Backend Developer</p>
+                        <p class="muted skills__subtitle">More than 2 years</p>
+                      </div>
+                    </button>
+                  </h2>
+
+                  <div id="skill-2" class="accordion-collapse collapse bg-dark" aria-labelledby="heading-2" data-bs-parent="#accordion_skills">
+                    <div class="accordion-body">
+
+                        <!-- PHP Percentage Start -->
+                        <div class="text-primary mb-3 skills__data">
+                            <div class="skills__titles">
+                                <p class="skills__name">PHP <br>80% </p>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__php"></span>
+                            </div>
+                        </div>
+                        <!-- PHP Percentage End -->
+
+                        <!-- Node Js Percentage Start -->
+                        <div class="text-success mb-3 skills__data">
+                            <div class="skills__titles">
+                                <p class="skills__name">Node Js <br>70%</p>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__node"></span>
+                            </div>
+                        </div>
+                        <!-- Node Js Percentage End -->
+
+                        <!-- Firebase Percentage Start -->
+                        <div class="text-warning mb-3 skills__data">
+                            <div class="skills__titles">
+                                <p class="skills__name">Firebase <br>90%</p>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__firebase"></span>
+                            </div>
+                        </div>
+                        <!-- Firebase Percentage End -->
+
+                        <!-- Python Percentage Start -->
+                        <div class="text-info mb-3 skills__data">
+                            <div class="skills__titles">
+                                <p class="skills__name">Python <br>55%</p>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__python"></span>
+                            </div>
+                        </div>
+                        <!-- Python Percentage End -->
+
+                    </div>
+                  </div>
+
+                </div>
+                <!--==================== SKILLS 2 END ====================-->
+
+                <!--==================== SKILLS 3 START ====================-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-3">
+                    <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skill-3" aria-expanded="false" aria-controls="skill-3">
+                      <div class="text-light skills__header">
+                        <p class="lead fw-bold skills__title"><i class="bi bi-palette2"></i> Designer</p>
+                        <p class="muted skills__subtitle">More than 5 years</p>
+                      </div>
+                    </button>
+                  </h2>
+
+                  <div id="skill-3" class="accordion-collapse collapse bg-dark" aria-labelledby="heading-3" data-bs-parent="#accordion_skills">
+                    <div class="accordion-body">
+
+                        <!-- Figma Percentage Start -->
+                        <div class="text-danger mb-3 skills__data">
+                            <div class="skills__titles">
+                                <p class="skills__name">Figma <br>90% </p>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__figma"></span>
+                            </div>
+                        </div>
+                        <!-- Figma Percentage End -->
+
+                        <!-- Sketch Percentage Start -->
+                        <div class="text-warning mb-3 skills__data">
+                            <div class="skills__titles">
+                                <p class="skills__name">Sketch <br>85%</p>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__sketch"></span>
+                            </div>
+                        </div>
+                        <!-- Sketch Percentage End -->
+
+                        <!-- Photoshop Percentage Start -->
+                        <div class="text-primary mb-3 skills__data">
+                            <div class="skills__titles">
+                                <p class="skills__name">Photoshop <br>85%</p>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__photoshop"></span>
+                            </div>
+                        </div>
+                        <!-- Photoshop Percentage End -->
+
+                    </div>
+                  </div>
+
+                </div>
+                <!--==================== SKILLS 3 END ====================-->
+
+              </div>
+
+            </div>
+          </div>
+          <!-- Accordion End -->
+
+        </div>
       </section>
+      <!--==================== SKILLS END ====================-->
+
+      <!--==================== SERVICES START ====================-->
+      <section id="services">
+        <div class="container my-5">
+          
+          <div class="text-center mb-5">
+            <h1 class="fw-bold section__title">Services</h1>
+            <p class="lead section__subtitle">What I offer</p>
+          </div>
+
+          <div class="row justify-content-center align-items-center">
+            
+            <!-- Ui/Ux Designer Card -->
+            <div class="col-8 col-lg-4 col-xl-3 my-2 my-sm-2">
+              <div class="card bg-dark shadow-lg">
+                <div class="card-body p-5">
+
+                  <div class="pt-5">
+                    <p class="display-5 text-danger">
+                      <i class="bi bi-columns"></i>
+                    </p>
+                    <h3 class="services__title">Ui/Ux <br> Designer</h3>
+                  </div>
+                  <a href="#services" class="text-danger button button--flex button--small button--link services__button">
+                      View More
+                      <i class="bi bi-arrow-right-short"></i>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Frontend Developer Card -->
+            <div class="col-8 col-lg-4 col-xl-3 my-2 my-sm-2">
+              <div class="card bg-dark shadow-lg">
+                <div class="card-body p-5">
+
+                  <div class="pt-5">
+                    <p class="display-5 text-warning">
+                      <i class="bi bi-braces"></i>
+                    </p>
+                    <h3 class="services__title">Frontend <br> Developer</h3>
+                  </div>
+                  <a href="#services" class="text-warning button button--flex button--small button--link services__button">
+                      View More
+                      <i class="bi bi-arrow-right-short"></i>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Branding Designer Card -->
+            <div class="col-8 col-lg-4 col-xl-3 my-2 my-sm-2">
+              <div class="card bg-dark shadow-lg">
+                <div class="card-body p-5">
+
+                  <div class="pt-5">
+                    <p class="display-5 text-info">
+                      <i class="bi bi-pencil"></i>
+                    </p>
+                    <h3 class="services__title">Branding <br> Designer</h3>
+                  </div>
+                  <a href="#services" class="text-info button button--flex button--small button--link services__button">
+                      View More
+                      <i class="bi bi-arrow-right-short"></i>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!--==================== SERVICES END ====================-->
 
 
     </main>
+    <!--==================== MAIN END ====================-->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
