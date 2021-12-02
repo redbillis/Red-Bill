@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Red Bill</title>
+
     <style>
       body {
         background-color:hsl(220, 44%, 12%);
@@ -144,7 +145,7 @@
                 </a>
               </li>
               <li class="nav-item ms-2 d-none d-md-inline">
-                <a href="#intro" class="navbar-brand">
+                <a href="#contact" class="navbar-brand">
                   <span class="fw-bold btn btn-outline-secondary rounded-pill">
                     <i class="bi bi-send-fill"></i>
                   </span>
@@ -183,7 +184,7 @@
               <i class="bi bi-image-alt"></i>
             </span>
           </a>
-          <a href="#intro" class="navbar-brand">
+          <a href="#contact" class="navbar-brand">
             <span class="fw-bold btn btn-lg btn-outline-secondary rounded-pill">
               <i class="bi bi-send-fill"></i>
             </span>
@@ -511,7 +512,7 @@
 
           <div class="row justify-content-center align-items-center">
             
-            <!-- Ui/Ux Designer Card -->
+            <!-- Ui/Ux Designer Card Start -->
             <div class="col-8 col-lg-4 col-xl-3 my-2 my-sm-2">
               <div class="card bg-dark shadow-lg">
                 <div class="card-body p-5">
@@ -530,8 +531,9 @@
                 </div>
               </div>
             </div>
+            <!-- Ui/Ux Designer Card End -->
 
-            <!-- Frontend Developer Card -->
+            <!-- Frontend Developer Card Start -->
             <div class="col-8 col-lg-4 col-xl-3 my-2 my-sm-2">
               <div class="card bg-dark shadow-lg">
                 <div class="card-body p-5">
@@ -550,8 +552,9 @@
                 </div>
               </div>
             </div>
+            <!-- Frontend Developer Card End -->
 
-            <!-- Branding Designer Card -->
+            <!-- Branding Designer Card Start -->
             <div class="col-8 col-lg-4 col-xl-3 my-2 my-sm-2">
               <div class="card bg-dark shadow-lg">
                 <div class="card-body p-5">
@@ -570,12 +573,78 @@
                 </div>
               </div>
             </div>
+            <!-- Branding Designer Card End -->
 
           </div>
 
         </div>
       </section>
       <!--==================== SERVICES END ====================-->
+
+      <!--==================== CONTACT ME START ====================-->
+      <section id="contact">
+        <div class="container my-5">
+
+          <div class="text-center mb-5">
+            <h1 class="fw-bold section__title">Contact Me</h1>
+            <p class="lead section__subtitle">Get in touch</p>
+          </div>
+
+          <!-- Form Element Start -->
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              
+              <form action="">
+                <!-- Name and Email Fields Start -->
+                <div class="row g-2">
+
+                  <!-- Name Field Start -->
+                  <div class="col-md">
+                    <div class="form-floating mb-3 text-primary">
+                      <input type="name" class="form-control bg-dark text-primary" id="floatingInput" placeholder="">
+                      <label for="floatingInput">Name</label>
+                    </div>
+                  </div>
+                  <!-- Name Field End -->
+
+                  <!-- Email Field Start -->
+                  <div class="col-md">
+                    <div class="form-floating mb-3 text-danger">
+                      <input type="email" class="form-control bg-dark text-danger" id="floatingInput" placeholder="">
+                      <label for="floatingInput">Email</label>
+                    </div>
+                  </div>
+                  <!-- Email Field End -->
+
+                </div>
+                <!-- Name and Email Fields End -->
+                
+                <!-- Subject Field Start -->
+                <div class="form-floating mb-3 text-success">
+                  <input type="subject" class="form-control bg-dark text-success" id="floatingInput" placeholder="">
+                  <label for="floatingInput">Subject</label>
+                </div>
+                <!-- Subject Field End -->
+  
+                <!-- Message Field Start -->
+                <div class="form-floating text-info">
+                  <textarea class="form-control bg-dark text-info" placeholder="" id="floatingTextarea" style="height: 250px"></textarea>
+                  <label for="floatingTextarea">Message</label>
+                </div>
+                <!-- Message Field Start -->
+              </form>
+
+              <div class="my-4 text-center">
+                <button type="submit" class="btn btn-outline-warning">Send Message <i class="bi bi-send"></i></button>
+              </div>
+              
+            </div>
+          </div>
+          <!-- Form Element End -->
+
+        </div>
+      </section>
+      <!--==================== CONTACT ME START ====================-->
 
 
     </main>
