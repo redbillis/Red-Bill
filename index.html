@@ -239,10 +239,12 @@
       <div class="container text-center">
         <div class="home__scroll">
           <a href="#about" class="btn btn-outline-info mb-5 home__scroll-button button--flex">
-              <i class="bi bi-mouse home__scroll-button"></i>
-              <span class="home__scroll-name">Scroll down</span>
-              <i class="bi bi-arrow-down-short home__scroll-arrow"></i>
-          </a>
+              <span class="tt" data-bs-placement="bottom" title="Scroll my Friend!">
+                <i class="bi bi-mouse home__scroll-button"></i>
+                <span class="home__scroll-name">Scroll down</span>
+                <i class="bi bi-arrow-down-short home__scroll-arrow"></i>
+              </span>
+            </a>
         </div>
       </div>
       <!-- SCROLL BUTTON END -->
@@ -523,7 +525,7 @@
                     </p>
                     <h3 class="services__title">Ui/Ux <br> Designer</h3>
                   </div>
-                  <a href="#services" class="text-danger button button--flex button--small button--link services__button">
+                  <a href="" class="text-danger button button--flex button--small button--link services__button" data-bs-toggle="modal" data-bs-target="#modal-ui-ux">
                       View More
                       <i class="bi bi-arrow-right-short"></i>
                   </a>
@@ -544,7 +546,7 @@
                     </p>
                     <h3 class="services__title">Frontend <br> Developer</h3>
                   </div>
-                  <a href="#services" class="text-warning button button--flex button--small button--link services__button">
+                  <a href="" class="text-warning button button--flex button--small button--link services__button" data-bs-toggle="modal" data-bs-target="#modal-frontend">
                       View More
                       <i class="bi bi-arrow-right-short"></i>
                   </a>
@@ -565,7 +567,7 @@
                     </p>
                     <h3 class="services__title">Branding <br> Designer</h3>
                   </div>
-                  <a href="#services" class="text-info button button--flex button--small button--link services__button">
+                  <a href="#" class="text-info button button--flex button--small button--link services__button" data-bs-toggle="modal" data-bs-target="#modal-branding">
                       View More
                       <i class="bi bi-arrow-right-short"></i>
                   </a>
@@ -579,6 +581,76 @@
 
         </div>
       </section>
+
+      <!-- Ui/Ux Modal Start -->
+      <div class="modal" id="modal-ui-ux" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark">
+
+            <div class="modal-header">
+              <h3 class="modal-title" id="modal-title">Ui/Ux <br> Designer</h3>
+              <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">❌</button>
+            </div>
+
+            
+            <div class="modal-body">
+              <p class="lead">✔️ I develop the user interface.</p>
+              <p class="lead">✔️ Web page development.</p>
+              <p class="lead">✔️ I create ux element interactions.</p>
+              <p class="lead">✔️ I position your company brand.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>      
+      <!-- Ui/Ux Modal End -->
+
+      <!-- Frontend Modal Start -->
+      <div class="modal" id="modal-frontend" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark">
+
+            <div class="modal-header">
+              <h3 class="modal-title" id="modal-title">Frontend <br> Developer</h3>
+              <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">❌</button>
+            </div>
+
+            
+            <div class="modal-body">
+              <p class="lead">✔️ I develop the user interface.</p>
+              <p class="lead">✔️ Web page development.</p>
+              <p class="lead">✔️ I create ux element interactions.</p>
+              <p class="lead">✔️ I position your company brand.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>      
+      <!-- Frontend Modal End -->
+
+      <!-- Branding Modal Start -->
+      <div class="modal" id="modal-branding" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark">
+
+            <div class="modal-header">
+              <h3 class="modal-title" id="modal-title">Branding <br> Designer</h3>
+              <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">❌</button>
+            </div>
+
+            
+            <div class="modal-body">
+              <p class="lead">✔️ I develop the user interface.</p>
+              <p class="lead">✔️ Web page development.</p>
+              <p class="lead">✔️ I create ux element interactions.</p>
+              <p class="lead">✔️ I position your company brand.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>      
+      <!-- Branding Modal End -->
+
       <!--==================== SERVICES END ====================-->
 
       <!--==================== CONTACT ME START ====================-->
@@ -660,5 +732,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
+
+    <script src="main.js"></script>
+
   </body>
 </html>
